@@ -80,3 +80,11 @@ Use this file for confirmed findings from experiments in this workspace. Keep sp
 - Vellum package unpack, repack, compare, and HTML export completed successfully when pointed at temporary outputs.
 - The current Vellum package fixture still compares cleanly against `originals/vellum/Winter's Magic_marisol-reyes.vellum`.
 - The EPUB comparison script is intentionally noisy because it prints the markdown report to stdout; use a temporary report path when testing to avoid overwriting workspace reports.
+
+## 2026-05-26 - EPUB Report Markdown Readability
+
+- The raw normalized XHTML/CSS diff in `reports/markdown-versions/epub_compare_report.md` was too long for practical GitHub reading.
+- `scripts/compare-epubs.sh` now writes collapsed GitHub `<details>` sections with summary tables instead of dumping the first 200 raw diff lines.
+- The content table focuses on the first comparable XHTML pair: `OEBPS/Story1.xhtml` vs `OEBPS/chapter-001.xhtml`.
+- The report still preserves the important comparison signal: Affinity uses one primary story XHTML file, while Vellum splits the sample into chapter/front-matter XHTML files.
+- Regenerating the report with `bash scripts/compare-epubs.sh unpacked/epub/affinity unpacked/epub/vellum reports/markdown-versions/epub_compare_report.md` produced the concise table format successfully.
