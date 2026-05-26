@@ -29,3 +29,6 @@ Plist:        0
 Content:      0
 Images:       0
 Other:        0
+
+## What This Proves
+The unpacked fixture and source Vellum package contain the same file set, and every common file compares byte-for-byte identical. This confirms the current unpacked sandbox is a faithful extraction of the source package. It does not prove that edited packages will reopen in Vellum or that every future mutation is safe.

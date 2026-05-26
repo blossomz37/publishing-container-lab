@@ -88,3 +88,10 @@ Use this file for confirmed findings from experiments in this workspace. Keep sp
 - The content table focuses on the first comparable XHTML pair: `OEBPS/Story1.xhtml` vs `OEBPS/chapter-001.xhtml`.
 - The report still preserves the important comparison signal: Affinity uses one primary story XHTML file, while Vellum splits the sample into chapter/front-matter XHTML files.
 - Regenerating the report with `bash scripts/compare-epubs.sh unpacked/epub/affinity unpacked/epub/vellum reports/markdown-versions/epub_compare_report.md` produced the concise table format successfully.
+
+## 2026-05-26 - Vellum Report Proof Statement
+
+- `reports/markdown-versions/vellum_compare_report.md` now includes a `What This Proves` section.
+- A clean package comparison proves the unpacked fixture has the same file set as the source `.vellum` package and that every common file is byte-for-byte identical.
+- This does not prove edited packages will reopen in Vellum or that future package mutations are safe.
+- `scripts/compare-vellum.sh` now ignores repo placeholder files such as `.gitkeep` and macOS metadata files such as `.DS_Store` when comparing package contents.

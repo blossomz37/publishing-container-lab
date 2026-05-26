@@ -39,8 +39,8 @@ right_dir="$(resolve_input_dir "$right_input" "$temp_root/right")"
 
 left_list="$temp_root/left-files.txt"
 right_list="$temp_root/right-files.txt"
-find "$left_dir" -type f | sed "s|^$left_dir/||" | sort > "$left_list"
-find "$right_dir" -type f | sed "s|^$right_dir/||" | sort > "$right_list"
+find "$left_dir" -type f ! -name '.gitkeep' ! -name '.DS_Store' | sed "s|^$left_dir/||" | sort > "$left_list"
+find "$right_dir" -type f ! -name '.gitkeep' ! -name '.DS_Store' | sed "s|^$right_dir/||" | sort > "$right_list"
 
 common_files="$temp_root/common-files.txt"
 left_only="$temp_root/left-only.txt"
@@ -168,6 +168,13 @@ done < "$common_files"
 	echo "Content:      $(wc -l < "$content_changed" | tr -d ' ')"
 	echo "Images:       $(wc -l < "$image_changed" | tr -d ' ')"
 	echo "Other:        $(wc -l < "$other_changed" | tr -d ' ')"
+	echo
+	echo "## What This Proves"
+	if [[ ! -s "$left_only" && ! -s "$right_only" && ! -s "$changed_files" ]]; then
+		echo "The unpacked fixture and source Vellum package contain the same file set, and every common file compares byte-for-byte identical. This confirms the current unpacked sandbox is a faithful extraction of the source package. It does not prove that edited packages will reopen in Vellum or that every future mutation is safe."
+	else
+		echo "This comparison found file-set or byte-level differences, so the current sandbox is not an identical extraction of the source package. Review the sections above before treating this package state as a clean baseline."
+	fi
 } > "$report_path"
 
 cat "$report_path"
