@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" xml:lang="en">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:identifier id="pub-id">urn:uuid:4758E513-7CF1-42E6-9A8F-927595831333</dc:identifier>
+<dc:title>How to Create an Affinity EPUB with a Custom CSS File for Amazon and Kindle</dc:title>
+<dc:date>2026-05-26T15:42:47Z</dc:date>
+<meta property="dcterms:modified">2026-05-26T15:42:47Z</meta>
+<meta property="rendition:layout">reflowable</meta>
+<meta property="rendition:flow">paginated</meta>
+<dc:creator id="creator">Anna Cooke</dc:creator>
+<meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+<meta name="generator" content="Affinity 3.2.1.4425 MacOS (May  7 2026)"/>
+<dc:language>en-US</dc:language>
+<meta property="ibooks:specified-fonts">true</meta>
+</metadata>
+<manifest>
+<item id="Story1" href="Story1.xhtml" media-type="application/xhtml+xml"/>
+<item id="styles" href="css/styles.css" media-type="text/css"/>
+<item id="Arial.ttf" href="font/Arial.ttf" media-type="application/font-sfnt"/>
+<item id="ArialBold.ttf" href="font/ArialBold.ttf" media-type="application/font-sfnt"/>
+<item id="ArialBoldItalic.ttf" href="font/ArialBoldItalic.ttf" media-type="application/font-sfnt"/>
+<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+</manifest>
+<spine>
+<itemref idref="Story1"/>
+</spine>
+</package>

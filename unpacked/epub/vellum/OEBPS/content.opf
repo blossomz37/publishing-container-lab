@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" xml:lang="en" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ schema: http://schema.org/" unique-identifier="pub-id" version="3.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Winter's Magic</dc:title>
+    <dc:creator id="creator">Cassandra Claus</dc:creator>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+    <meta refines="#creator" property="file-as">Claus, Cassandra</meta>
+    <dc:language>en</dc:language>
+    <dc:identifier id="pub-id">urn:uuid:20C32A95-91FC-47A6-9CCC-DECC20B02BD1</dc:identifier>
+    <meta refines="#pub-id" scheme="xsd:string" property="identifier-type">uuid</meta>
+    <meta property="dcterms:modified">2026-05-26T15:53:15Z</meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+    <meta property="schema:accessibilitySummary">The structure and markup of this publication follow WCAG guidelines. This summary has been automatically generated based on the content of this publication.</meta>
+    <meta name="generator"
+          content="Vellum" />
+    <meta name="vellum-version"
+          content="4.1.2" />
+    <meta name="vellum-target-platform"
+          content="Kindle" />
+  </metadata>
+  <manifest>
+    <item id="ncx"
+          href="toc.ncx"
+          media-type="application/x-dtbncx+xml" />
+    <item id="toc"
+          properties="nav"
+          href="toc.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="title-page-xhtml"
+          href="title-page.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="contents-xhtml"
+          href="contents.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="copyright-xhtml"
+          properties="svg"
+          href="copyright.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="chapter-001-xhtml"
+          href="chapter-001.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="chapter-002-xhtml"
+          href="chapter-002.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="chapter-003-xhtml"
+          properties="svg"
+          href="chapter-003.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="chapter-004-xhtml"
+          href="chapter-004.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="chapter-005-xhtml"
+          href="chapter-005.xhtml"
+          media-type="application/xhtml+xml" />
+    <item id="cormorant-italic-ttf"
+          href="fonts/Cormorant-Italic.ttf"
+          media-type="font/ttf" />
+    <item id="cormorant-medium-ttf"
+          href="fonts/Cormorant-Medium.ttf"
+          media-type="font/ttf" />
+    <item id="cormorant-regular-ttf"
+          href="fonts/Cormorant-Regular.ttf"
+          media-type="font/ttf" />
+    <item id="cormorant-semibold-ttf"
+          href="fonts/Cormorant-SemiBold.ttf"
+          media-type="font/ttf" />
+    <item id="cormorant-semibolditalic-ttf"
+          href="fonts/Cormorant-SemiBoldItalic.ttf"
+          media-type="font/ttf" />
+    <item id="cover-image"
+          properties="cover-image"
+          href="images/untitled-1600-x-500-px-1707-x-2560-px.jpg"
+          media-type="image/jpeg" />
+    <item id="break-rule-screen-svg"
+          href="images/break-rule-screen.svg"
+          media-type="image/svg+xml" />
+    <item id="vellum-badge-svg"
+          href="images/vellum-badge.svg"
+          media-type="image/svg+xml" />
+    <item id="media-css"
+          href="css/media.css"
+          media-type="text/css" />
+    <item id="style-css"
+          href="css/style.css"
+          media-type="text/css" />
+    <item id="sil-open-font-license-11-txt"
+          href="fonts/SIL-Open-Font-License-1.1.txt"
+          media-type="text/plain" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="title-page-xhtml" />
+    <itemref idref="contents-xhtml" />
+    <itemref idref="copyright-xhtml" />
+    <itemref idref="chapter-001-xhtml" />
+    <itemref idref="chapter-002-xhtml" />
+    <itemref idref="chapter-003-xhtml" />
+    <itemref idref="chapter-004-xhtml" />
+    <itemref idref="chapter-005-xhtml" />
+  </spine>
+</package>

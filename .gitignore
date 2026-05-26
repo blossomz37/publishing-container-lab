@@ -1,0 +1,43 @@
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+.directory
+.Trash-*/
+
+# Editor and local workspace noise
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.temp

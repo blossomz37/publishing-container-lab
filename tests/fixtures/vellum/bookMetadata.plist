@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Cassandra Claus</string>
+	<key>bookUUID</key>
+	<string>20C32A95-91FC-47A6-9CCC-DECC20B02BD1</string>
+	<key>coverImageKey</key>
+	<string>untitled-1600-x-500-px-1707-x-2560-px</string>
+	<key>coverImagePath</key>
+	<string>images/untitled-1600-x-500-px-1707-x-2560-px/variant/variant-sRGB-1000-99.jpg</string>
+	<key>elementData</key>
+	<dict>
+		<key>id1809EFD5-4B2D-470D-877E-1A1BD6799B80</key>
+		<dict>
+			<key>title</key>
+			<string>The Restoration</string>
+		</dict>
+		<key>id2B17AB76-5BF5-497D-97EF-439E7013E062</key>
+		<dict>
+			<key>mtime</key>
+			<date>2024-11-27T04:20:29Z</date>
+			<key>title</key>
+			<string>Copyright</string>
+		</dict>
+		<key>id32617CFB-DCC6-43D6-B7F0-3B1B8A90D290</key>
+		<dict>
+			<key>title</key>
+			<string>The Land's Whisper</string>
+		</dict>
+		<key>id6D2425B4-9595-48E1-B8D7-23F46526C2AB</key>
+		<dict>
+			<key>title</key>
+			<string>A New Harmony</string>
+		</dict>
+		<key>id72200D8B-793A-49D8-A94A-90F87B9E96F2</key>
+		<dict>
+			<key>title</key>
+			<string>The Fading Enchantment</string>
+		</dict>
+		<key>id76BEB4FF-292A-45F5-B628-95847325BC15</key>
+		<dict>
+			<key>mtime</key>
+			<date>2025-10-26T00:16:07Z</date>
+			<key>title</key>
+			<string>Contents</string>
+		</dict>
+		<key>id7A569BD6-E1FB-48DB-A0D8-915A182FE307</key>
+		<dict>
+			<key>mtime</key>
+			<date>2024-11-27T04:22:50Z</date>
+			<key>title</key>
+			<string>Title Page</string>
+		</dict>
+		<key>idC6F9DA58-90B5-43F2-9792-8E7F4FC4770A</key>
+		<dict>
+			<key>title</key>
+			<string>The Earth Witch’s Truth</string>
+		</dict>
+	</dict>
+	<key>fileFormatVersion</key>
+	<integer>44</integer>
+	<key>imageCount</key>
+	<integer>2</integer>
+	<key>title</key>
+	<string>Winter's Magic</string>
+	<key>vellumVersion</key>
+	<string>3.9.2</string>
+</dict>
+</plist>

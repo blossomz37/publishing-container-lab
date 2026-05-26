@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Reports Index</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f3ea;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --accent: #0f766e;
+      --border: #d8e0e8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, var(--bg), #eef4f1);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    main {
+      width: min(720px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(31, 41, 51, 0.08);
+      padding: 32px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    li a:hover,
+    li a:focus-visible {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 26px rgba(15, 118, 110, 0.12);
+      outline: none;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    .path {
+      color: var(--muted);
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>HTML Reports</h1>
+    <p>Links to the generated HTML reports in this folder.</p>
+    <ul>
+      <li>
+        <a href="epub_compare_report.html">
+          <span class="name">EPUB Compare Report</span>
+          <span class="path">epub_compare_report.html</span>
+        </a>
+      </li>
+      <li>
+        <a href="vellum_compare_report.html">
+          <span class="name">Vellum Compare Report</span>
+          <span class="path">vellum_compare_report.html</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

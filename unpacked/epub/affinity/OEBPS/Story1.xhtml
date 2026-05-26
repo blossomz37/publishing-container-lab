@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en-US" xml:lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<title>How to Create an Affinity EPUB with a Custom CSS File for Amazon and Kindle</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="PageRef1" role="doc-pagebreak" aria-label="1" epub:type="pagebreak"/>
+<h1 class="Heading_1 Title p1">How to Create an Affinity Reflowable EPUB with Custom CSS Styles that works on Amazon</h1>
+<h2 class="Heading_1 p2">Step 1: Creating an Affinity EPUB Template and CSS File</h2>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Open the Affinity App, and create a new RGB document. I like the A5 size since it looks a bit like a tablet, but any size technically works.</li>
+<li class="Normal_Body_Text Bullet_List p3">For the sake of time, I&apos;ll point you to a couple handy Canva training videos on how to do this in the new Affinity version. I watched this one for the basics. <a href="https://youtu.be/a9cHSsA3PdE." class="Hyperlink">https://youtu.be/a9cHSsA3PdE.</a> The process works. I use a Master Page, however, as you will see in this document. </li>
+<li class="Normal_Body_Text Bullet_List p3">NOTE: if you are going to have any images or glyphs in your book, you may want a resolution greater than 72 for the sake of image quality, but keep it below 144 dpi. Amazon shrinks images that are too big. If you aren’t using ornate headers, 72 dpi works pretty well.</li>
+<li class="Normal_Body_Text Bullet_List p3">Take a minute and set up your text styles.</li>
+<li class="Normal_Body_Text Bullet_List p3">Make sure you have licenses for your fonts, or you are using freely available commercial fonts. This does actually matter when you are publishing for sale on Amazon.</li>
+</ul>
+<p class="Tips_and_Tricks_Special_Italics p4">NOTE: If you have a finished manuscript that is already formatted in, say, Word, you can actually have Affinity pull your existing formatting in as styles, and they will pop up in your Text Styles panel. This can be useful because… well, just keep going and you’ll figure out why. It works just starting from scratch, too, but this can be an easy way to format while you set things up.</p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Copy and paste some text into the text box on page one if you need to see what it all looks like. I highly recommend using this initial document as a way to set up a template that you can use over and over again. It will save you time. Anywho.</li>
+<li class="Normal_Body_Text Bullet_List p3">Get your text styles ready. Using Paragraph Styles, format your chapter headings and and chapter subtitles, set up your body text and any special block text styles.example: your main character has written a letter to her love interest, and you want a large block of <span id="PageRef2" role="doc-pagebreak" aria-label="2" epub:type="pagebreak"/>specially indented italicized text, or you’re quoting a poem and want it centered. Just make a text style with that formatting, and use it on that block of text. Paragraph styles are not for one-off inline text style changes like an italicized word here and there. That’s a character style (the ‘a’).</li>
+</ul>
+<p class="Tips_and_Tricks_Special_Italics p4">Tip: As you work, you may want to name all of your own styles something that you can recognize later. Some signal to yourself that it’s yours.</p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Also create a few character styles. (the &apos;a&apos; in the text styles panel as opposed to the P). </li>
+<li class="Normal_Body_Text Bullet_List p3">You may want to set one for Inline Italics because I found that the CSS won&apos;t include it otherwise. You can do this by simply highlighting some of your main body text, toggling the Italics on the text box toolbar, then going to your text styles panel and adding the character style with the +a option. Select &apos;no change&apos; for all the font options, and you can use that character format on any inline text in the document without changing the size of the font or the font itself. Make sure Italics is selected on the Text Style Editor panel&apos;s Font section. It’ll be a little button below the style options. If you just use the text box tool italics, or the command+i keyboard shortcut to style a bit of text in your document, it won&apos;t transfer into the EPUB when you export. Go on. Ask me how I know. For this, you have to have a character style that can be exported just for that purpose.</li>
+</ul>
+<p class="Tips_and_Tricks_Special_Italics p4">Tip: rather than going through your entire document one page at a time, an “easy” way to make sure all of the special character styles in your document are painted with the character styles you’ve created in your template, you can use Find and Replace to search for Format: Italics (or whichever special style). It will highlight ALL of the italicized text (which might be more than you wanted) but you can then go down the list and Replace (or skip an unwanted instance by pressing the find button again) with Style: Inline Italics or whatever you’ve called it. Fiddly? Yes. But that’s what formatting is. Fiddling.</p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">IF YOU WANT THE POSH CUSTOM DROP CAP COVETED BY PENNILESS INDIE WRITERS EVERYWHERE: It works beautifully! I love this part. </li>
+<li class="Normal_Body_Text Bullet_List p3">Ok. First, create a character style for your Drop Cap. It doesn&apos;t have to look pretty, it just has to be there. You can tweak it in the CSS later, but it&apos;s important to have this set up. For the sake of looks in your affinity document, though, I suggest you edit it to look like what you want, font, style, etc. You&apos;re not using the Drop Cap option in the text styles editor yet, you&apos;re just creating a character style, so size, variants, etc.</li>
+<li class="Normal_Body_Text Bullet_List p3">Also, keep in mind that a lot of reading devices allow the reader to set their own preferences for font family, so all you’re really doing is telling their phone to show a drop cap. But, some people (me) like to show the original formatting, so that’s where it’s good to be a little picky, here.<div id="PageRef3" role="doc-pagebreak" aria-label="3" epub:type="pagebreak"/>
+</li>
+</ul>
+<h3 class="Heading_1 Heading_2 p5">Now you go in and get your chapter’s first paragraph formatted:</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Create a Paragraph Style: One way to do this is in the Text Styles Editor. In Style, select your desired options for style to base it on, if any, and whether or not you want a specific text style or level to follow it. I usually base it on Normal, or whatever I&apos;ve called my Body Text style, and follow it with Normal. </li>
+<li class="Normal_Body_Text Bullet_List p3">Under Character select your desired font, text size,etc. A good rule of thumb is to keep it the same as the rest of the body text so it blends nicely.</li>
+<li class="Normal_Body_Text Bullet_List p3">Then in Spacing, select &apos;justified last line left.&apos;</li>
+<li class="Normal_Body_Text Bullet_List p3">In Paragraph, go to Drop Caps, and enable the Drop Cap. 3 lines is good, and you want left align and scale for descenders. Give a little space to text. For the &apos;style&apos; option, click the arrow and you&apos;ll see your Drop Cap character style in the dropdown. Select that, and voila.</li>
+<li class="Normal_Body_Text Bullet_List p3">Repeat the character style creation step if you want an Initial Words setting - as in the first few words of your first paragraphs are in small caps, or italicized caps. Whatever. You’ll need a character style for that, but it works very much the same as the Drop Cap. So create the character style first, then use it in your First Paragraph Paragraph Style formatting.</li>
+<li class="Normal_Body_Text Bullet_List p3">Click OK.</li>
+<li class="Normal_Body_Text Bullet_List p3">Select your first paragraph and apply First Paragraph formatting.</li>
+<li class="Normal_Body_Text Bullet_List p3">THIS WILL AUTOMATICALLY-LIKE-MAGIC INSERT A DROP CAP (and any other formatting options) into your first paragraph as you go through and format your chapters. Which is AWESOME. Sorry. I’ve been working with Word so long this is still making me geek out, and if you’ve ever tried to insert Drop Caps into a 40 chapter Word document, you will understand.</li>
+</ul>
+<h3 class="Heading_1 Heading_2 p5">Next you&apos;re going to:</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Place your chapter header images and pin them as INLINE using the Pinning panel. The videos and all the Canva suggestions I found for creating these seem to want them to float with text, but it is a PAIN in the BOTOX to mess with in the Affinity document. Just saying. Inline actually works too, and I had no trouble with it reflowing in the finished product.</li>
+<li class="Normal_Body_Text Bullet_List p3">Also rasterize your images. This makes them adopt the same dpi as your document, and you won&apos;t wind up being surprised by tiny, underwhelming images in your finished Kindle Book.</li>
+</ul>
+<p class="Special_Item p6">You may want to set up a Text Style just for those images, which can be useful in finding them <span id="PageRef4" role="doc-pagebreak" aria-label="4" epub:type="pagebreak"/>all later. I went ahead and created a Glyph and a Header Image text style so I could easily navigate to any of them and swap them if necessary. Find and Replace is sort of your document navigation, I’ve found.</p>
+<p class="Tips_and_Tricks_Special_Italics p7">If you’re working on your manuscript, now is a good time to go through and format everything using only the text styles you’ve created.</p>
+<h3 class="Heading_1 Heading_2 p5">Finishing Up:</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3"><span class="Inline_Italics">NOW: Delete all the other unused not-yours styles. I mean it. Get rid of them. Anything that isn&apos;t being used, cut it off.</span></li>
+<li class="Normal_Body_Text Bullet_List p3">THEN: On the Text Styles panel, right click the ‘hamburger’ for each Paragraph Style that is being used, select &apos;edit style&apos;</li>
+<li class="Normal_Body_Text Bullet_List p3">In the Text Style Editor, go down to Export Tags, and under EPUB, select Include Class in HTML and Emit CSS.</li>
+<li class="Normal_Body_Text Bullet_List p3">You will also want to select &apos;p&apos; for any paragraph/body styles, and &apos;h1&apos; &apos;h2&apos; etc. for any title and subtitle hierarchy.</li>
+<li class="Normal_Body_Text Bullet_List p3">ALSO: Right click each of your Character Styles, go to Edit Style, and do the same in Export Tags with the Include Class in HTML and Emit CSS, but this time you want to select &apos;span&apos; so that they are applied only to inline text as style options.</li>
+</ul>
+<h3 class="Heading_1 Heading_2 p5">Alright. Your template should be good to go at this point, so you want to:</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Export as an EPUB. You&apos;ll see the Export options panel on the right. You don&apos;t have to worry about any of the options EXCEPT Generate CSS from Styles. Keep that checked. And maybe check Show in Finder. That just comes in handy.</li>
+<li class="Normal_Body_Text Bullet_List p3">You could also take a moment to save your document as a template and an AF file under whatever name you want, as well.</li>
+</ul>
+<p class="Tips_and_Tricks_Special_Italics p4">The reason you exported this as an EPUB with CSS generated from styles is simply so you can get that CSS with your isolated chosen text styles, because...</p>
+<h2 class="Heading_1 p8">Step 2: Creating a Custom CSS Stylesheet</h2>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Open your CSS editor.</li>
+</ul>
+<p class="Special_Item p6">Use the Open menu to open your EPUB document. It will import all of your CSS, and if it&apos;s anything like Sigil, it may throw a fit because Affinity does weird things with CSS generation at the moment. Maybe they will get this fixed. If the Higher Ups are reading this, I might suggest having some sort of CSS editor built into the Affinity wardrobe. You can create it but it&apos;s hidden <span id="PageRef5" role="doc-pagebreak" aria-label="5" epub:type="pagebreak"/>at the moment, and not editable.</p>
+<p class="p9"><span class="span1"></span></p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p10">Alright. You&apos;ve got your EPUB&apos;s guts on the table. You want to find your Text Stylesheet. In Sigil, this is in the Styles folder in the left-hand navigation panel, under Text. Open that sucker.</li>
+<li class="Normal_Body_Text Bullet_List p3">Select whatever file ends in Styles.css.</li>
+<li class="Normal_Body_Text Bullet_List p3">Then refrain from freaking out.</li>
+<li class="Normal_Body_Text Bullet_List p3">You&apos;re going to find a ton of styles in there that aren&apos;t actually in your document. </li>
+<li class="Normal_Body_Text Bullet_List p3">A few at the top with <span class="span2">@font-face {</span> in the title will be the ones that you want in your document. You can keep those there, since that tells the reader what font you&apos;re using. But you can delete any of the fonts that you don&apos;t want to use - there may be a few. </li>
+<li class="Normal_Body_Text Bullet_List p3">Then, wade into your paragraph and span styles. If it has coding but isn&apos;t on your list of created styles: go ahead and get rid of it. (Gasp!). I swear, the CSS will still work. There will probably be a whole bunch of &apos;p&apos; styles with nothing, and maybe some empty &apos;span&apos; styles, and extra headings. Whatever. If it&apos;s not in your document, cut it off. </li>
+<li class="Normal_Body_Text Bullet_List p3">Now go in and find the ones that you created, used, and named. They&apos;ll be recognizable, and they will be there amid the chaos.</li>
+<li class="Normal_Body_Text Bullet_List p3">Edit your code.<ul>
+<li class="Normal_Body_Text Bullet_List Bullet_2nd_Level p11">I found that if I wanted the paragraphs not to have a space between them on an Ereader, I had to go in and find my body paragraph styles, and add the line  <span class="span3">margin-bottom:0;</span>  to the code. (Copy only the highlighted selection). That line was not included in the code that came over from Affinity. I do not know why. Sigil may have &apos;cleaned&apos; it. I only know how to work around it if it&apos;s not in there. </li>
+<li class="Normal_Body_Text Bullet_List Bullet_2nd_Level p11">I also found upon validating the code out that there will be incorrect widows and orphans code. The code needs to have a value of something greater than zero. So that part of the code would go:   widows:1; orphans:1;  Which would keep one line at the top of the page, and a single line at the bottom. You can have anything more than one, but it can&apos;t be 0.</li>
+<li class="Normal_Body_Text Bullet_List Bullet_2nd_Level p11"><span class="span4">Below is the Drop Cap Code I used. (My Character Style was called, get this: Drop Cap.)</span><div id="PageRef6" role="doc-pagebreak" aria-label="6" epub:type="pagebreak"/>
+</li>
+</ul>
+</li>
+</ul>
+<p class="Normal_Body_Text Bullet_List Bullet_2nd_Level p12"><span class="span5"></span></p>
+<p class="Special_Item p6"><span class="span6">.Drop_Cap {</span></p>
+<p class="Special_Item"><span class="span7">font-family:Garamond, serif;</span></p>
+<p class="Special_Item"><span class="span8">float:left;</span></p>
+<p class="Special_Item"><span class="span9">font-size:450.0%;</span></p>
+<p class="Special_Item"><span class="span10">line-height:.75;</span></p>
+<p class="Special_Item"><span class="span11">margin-right:.03em;</span></p>
+<p class="Special_Item"><span class="span12">}</span></p>
+<p class="Special_Item"></p>
+<p class="Normal_Body_Text">You can copy and paste that (copy everything that&apos;s highlighted blue) into your own CSS and twiddle with it however you want, rename it to your Drop Cap Style Name, change the font, whatever. These settings transfer well into the EPUB reader as a 3 line drop cap.</p>
+<p class="Tips_and_Tricks_Special_Italics p4">Note: I couldn&apos;t figure out how to force the reader to only display the font I wanted for the title and the drop cap. This is a feature I&apos;ve seen on some really pretty eBooks, and I&apos;d love to figure it out, but it seems to require going through the entire document&apos;s CSS text to add a specific command to the text formatting that tells it to show the drop cap as &apos;font:&quot;whatever&quot;&apos; in that paragraph. If anyone has any suggestions for this, let me know! </p>
+<h3 class="Heading_1 Heading_2 p5">Right. So. You&apos;ve tweaked your CSS Stylesheet.</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Now save just that sheet. </li>
+</ul>
+<p class="Special_Item p6">In Sigil, you can right-click on the Styles.css menu item that you opened, and it will give you a drop down with a save-as option - I recommend putting it in the same folder with your template, but you do you.</p>
+<p class="Special_Item"></p>
+<h3 class="Heading_1 Heading_2">To add this to your Affinity document:</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Open your EPUB panel. (Click the down arrow on any tab full of panels, and select ‘panels,’ then select ‘EPUB.’)</li>
+<li class="Normal_Body_Text Bullet_List p3">Make sure the Embed on Add option is toggled on, and add the CSS file you just created.NOTE: The stylesheet doesn&apos;t actually follow your template, so you&apos;ll have to add it to any finished book, but now you&apos;ve got one that works, and that you can adapt to whatever you need.</li>
+</ul>
+<h2 class="Heading_1 p8">Step 3: Creating your Reflowable EPUB with your specialty Embedded CSS Stylesheet</h2>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">You can use the template now, and just copy and paste your manuscript into your text box on your first page and then click the autoflow arrow. (See video link mentioned above for <span id="PageRef7" role="doc-pagebreak" aria-label="7" epub:type="pagebreak"/>more in-depth instructions.)</li>
+</ul>
+<p class="Special_Item p6">This is where it can get hairy. If your text is already formatted in your text processor, Affinity can bring those formatting options in as styles - which, as mentioned above, you can use to create your initial text styles in your template. You can also opt to keep or replace the Affinity styles. But keep in mind that however you choose to go about creating your text style collection, the names of the styles in use in your document have to match the CSS file exactly because that&apos;s what tells the EPUB reader to display the styles you&apos;ve selected.</p>
+<p class="Tips_and_Tricks_Special_Italics p7">Side-note: Pasting unformatted text gets rid of any chapter headings you had, which makes navigation a pain. If I was bringing my text into an Affinity document created with the template, I found it was easier to have some headings set up in my initial word editing document before pasting into Affinity, then go through and use the Find and Replace panel to find all of those word processor styles and switch them to my Template/CSS styles using the Replace: Styles feature. That way I could be sure it was the right style name/format. (I hope that was understandable.)</p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">Begin formatting your document using the styles you created.<ul>
+<li class="Normal_Body_Text Bullet_List Bullet_2nd_Level p11">Don’t forget to use your inline character styles instead of the text box styles for inline bold, italics, and underline.</li>
+</ul>
+</li>
+</ul>
+<p class="Special_Item p6"></p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p13">You will want to create your ToC, any front and back matter, etc now. Have your cover image ready to go as well. There are videos and instructions on Canva for most of these things.</li>
+</ul>
+<p class="Tips_and_Tricks_Special_Italics p4">NOTE: I made my own ToC using anchors and links, which is how you have to do it in Word, but there is a ToC panel available in Affinity. Maybe someone could test that out and see how it works in CSS. The Table of Contents I made using links and anchors in Affinity works perfectly on Amazon, but it’s maybe not as simple to create as the automatic ToC generator.</p>
+<p class="Normal_Body_Text p14">Once you have your whole document formatted and ready to go (which is the nitty-gritty fiddly part, so buckle in for a day of clicking mouse buttons) you can export it as your official reflowable EPUB.</p>
+<h3 class="Heading_1 Heading_2 p5">To do this, here are a few helpful hints.</h3>
+<ul>
+<li class="Normal_Body_Text Bullet_List p3">In the EPUB Reflowable Export panel, this time you want to do the following, where X indicates an unused option or a NOT:<div id="PageRef8" role="doc-pagebreak" aria-label="8" epub:type="pagebreak"/>
+</li>
+</ul>
+<p class="Special_Item p6"><span class="Green_Text">Use Document Resolution</span></p>
+<p class="Special_Item">X Downsample</p>
+<p class="Special_Item"><span class="Green_Text">Compression: 100</span></p>
+<p class="Special_Item">X Convert Bulleted</p>
+<p class="Special_Item">X Convert Numbered Lists</p>
+<p class="Special_Item"><span class="Green_Text">Remove line breaks</span></p>
+<p class="Special_Item">X Generate CSS from Styles</p>
+<p class="Special_Item">X Preserve Local Overrides</p>
+<p class="Special_Item">X Hide TOC Numbers</p>
+<p class="Special_Item"><span class="Green_Text">Cover Page: Use cover image from file</span></p>
+<p class="Special_Item"><span class="Green_Text">Pagination Source: None</span></p>
+<p class="Special_Item"><span class="Green_Text">Ask for Location/ Show in finder</span></p>
+<p class="Special_Item"><span class="Green_Text"></span></p>
+<p class="Tips_and_Tricks_Special_Italics p7">You don’t need to generate another CSS file, you want the Ereader to pick up the one you’ve embedded. If you preserve local overrides, it seems to favor the Ereader’s settings more than the CSS file. I may be wrong about this, but it doesn&apos;t change the usability when it&apos;s not checked.</p>
+<p class="p15"><span class="span13">Then:</span></p>
+<ul>
+<li class="Normal_Body_Text Bullet_List p10">Export.</li>
+<li class="Normal_Body_Text Bullet_List p3">Name your file.</li>
+<li class="Normal_Body_Text Bullet_List p3">Check your work using your own Ereader, like Books on iMac.</li>
+</ul>
+<p class="Normal_Body_Text Bullet_List p16"></p>
+<h2 class="Heading_1 p8">Further Resources</h2>
+<p class="Normal_Body_Text p14">All in all, I think I used the following Paragraph and Character Styles, just as an example:</p>
+<h3 class="Heading_1 Heading_2 p5">Paragraph:</h3>
+<p class="Special_Item p6">Chapter Number</p>
+<p class="Special_Item">Chapter Header</p>
+<p class="Special_Item">Centered Glyph</p>
+<p class="Special_Item">Centered Header</p>
+<p class="Special_Item">Journal Entry Date</p>
+<p class="Special_Item">First Paragraph w Drop Cap</p>
+<p class="Special_Item">First Paragraph No Drop Cap</p>
+<p class="Special_Item">Normal Body Text</p>
+<div id="PageRef9" role="doc-pagebreak" aria-label="9" epub:type="pagebreak"/>
+<p class="Special_Item">Letter Indent Italics</p>
+<p class="Special_Item">Centered Poetry Italics</p>
+<p class="Special_Item">Centered Normal</p>
+<p class="Special_Item">Centered Bold</p>
+<p class="Special_Item">Table of Contents</p>
+<h3 class="Heading_1 Heading_2">Character:</h3>
+<p class="Special_Item p6">Inline Italics</p>
+<p class="Special_Item">Drop Cap</p>
+<p class="Special_Item">Initial Words</p>
+<p class="Special_Item">Hyperlink</p>
+<p class="Special_Item">There are a few of these in the Text Styles for this Document for reference that you can edit if you want and practice exporting for a CSS Sheet. </p>
+</body>
+</html>
