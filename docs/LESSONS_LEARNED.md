@@ -12,6 +12,7 @@ Use this file for confirmed findings from experiments in this workspace. Keep sp
 - `tests/outputs/sample_roundtrip.epub` identifies as an EPUB document.
 - `originals/vellum/Winter's Magic_marisol-reyes.vellum` identifies as ZIP archive data and passes `unzip -t`.
 - `originals/affinity/sample-epub.af` identifies only as `data`; `unzip -t` fails with exit code 9 because no ZIP central directory is found. Treat `.af` as opaque/proprietary unless a better unpacking method is discovered.
+- `originals/affinity/styles.afstyles` identifies only as `data`; it starts with the Affinity native-file magic bytes `00 FF 4B 41`, matching the `.af` sample family, but fails ZIP, tar, and gzip archive probes. Treat `.afstyles` as an opaque/proprietary Affinity binary container, not a standard archive.
 
 ### EPUB Round-Trip Behavior
 
