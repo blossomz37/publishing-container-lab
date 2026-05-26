@@ -1,0 +1,126 @@
+@font-face {
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	src: url("../font/ArialBoldItalic.ttf");
+}
+@font-face {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../font/Arial.ttf");
+}
+.my-title {
+font-size:3.646959em;
+letter-spacing:0.05em;
+font-variant-caps: small-caps;
+text-align:center;
+margin-top:1em;
+hyphens:none;
+}
+
+.my-paragraph-style {
+
+}
+
+.my-normal-style {
+font-family:Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+.my-hyperlink {
+text-decoration:underline;
+color:Blue;
+}
+
+.my-hyperlink-style {
+
+}
+
+.my-notes {
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-style:italic;
+font-size:1.701914em;
+color:#00B245;
+text-align:justify;
+hyphens:none;
+line-height:2em;
+margin-left:2em;
+text-indent:-2em;
+}
+
+.my-italics {
+font-style:italic;
+}
+
+.my-green-text {
+color:#4C9A4D;
+}
+
+.p5 {
+margin-top:1em;
+font-weight:normal;
+font-style:normal;
+font-size:1.458784em;
+letter-spacing:0;
+}
+
+.p6 {
+margin-top:1em;
+font-weight:normal;
+font-style:normal;
+font-size:1.458784em;
+letter-spacing:0;
+}
+
+.p3 {
+margin-top:1em;
+font-weight:normal;
+font-style:normal;
+font-size:1.458784em;
+letter-spacing:0;
+}
+
+.p4 {
+margin-left:1em;
+margin-top:1em;
+}
+
+.p1 {
+margin-top:0;
+}
+
+.p2 {
+margin-top:2em;
+font-weight:normal;
+font-style:normal;
+font-size:1.458784em;
+letter-spacing:0;
+}
+
+.span114 {
+font-family:Arial, sans-serif;
+}
+
+.span45 {
+color:#A20000;
+font-family:Arial, sans-serif;
+}
+
+.span62 {
+background-color:#B8D7FF;
+font-family:Arial, sans-serif;
+}
+
+.span51 {
+background-color:#EFC4FF;
+font-family:Arial, sans-serif;
+}
+
+.span1 {
+font-size:2.188176em;
+letter-spacing:0;
+}
+
